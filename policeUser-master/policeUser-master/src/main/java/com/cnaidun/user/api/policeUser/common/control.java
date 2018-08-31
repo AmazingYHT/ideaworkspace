@@ -14,7 +14,6 @@ public class control {
     @RequestMapping("/index.action")
     public void test() {
         jedisServer.getInstance();
-        String a="1";
     }
 
 }
