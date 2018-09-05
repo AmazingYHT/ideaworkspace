@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cnaidun.dataservice.dboperation.mysql.dao.EntertainmentRecordMapper" >
+  <resultMap id="BaseResultMap" type="com.cnaidun.dataservice.dboperation.mysql.model.EntertainmentRecord" >
+    <id column="workNo" property="workno" jdbcType="VARCHAR" />
+    <result column="workTypeCode" property="worktypecode" jdbcType="VARCHAR" />
+    <result column="unitCode" property="unitcode" jdbcType="VARCHAR" />
+    <result column="parentCode" property="parentcode" jdbcType="VARCHAR" />
+    <result column="type" property="type" jdbcType="INTEGER" />
+    <result column="status" property="status" jdbcType="INTEGER" />
+    <result column="uid" property="uid" jdbcType="VARCHAR" />
+    <result column="chargeName" property="chargename" jdbcType="VARCHAR" />
+    <result column="mobile" property="mobile" jdbcType="VARCHAR" />
+    <result column="handleOffice" property="handleoffice" jdbcType="VARCHAR" />
+    <result column="serviceMode" property="servicemode" jdbcType="VARCHAR" />
+    <result column="serviceAdress" property="serviceadress" jdbcType="VARCHAR" />
+    <result column="doorheadName" property="doorheadname" jdbcType="VARCHAR" />
+    <result column="unitName" property="unitname" jdbcType="VARCHAR" />
+    <result column="operatingAddress" property="operatingaddress" jdbcType="VARCHAR" />
+    <result column="unitType" property="unittype" jdbcType="VARCHAR" />
+    <result column="creditCode" property="creditcode" jdbcType="VARCHAR" />
+    <result column="corporationName" property="corporationname" jdbcType="VARCHAR" />
+    <result column="corporationMobile" property="corporationmobile" jdbcType="VARCHAR" />
+    <result column="corporationId" property="corporationid" jdbcType="VARCHAR" />
+    <result column="operatorName" property="operatorname" jdbcType="VARCHAR" />
+    <result column="operatorMobile" property="operatormobile" jdbcType="VARCHAR" />
+    <result column="operatorIdno" property="operatoridno" jdbcType="VARCHAR" />
+    <result column="registrationForm" property="registrationform" jdbcType="LONGVARCHAR" />
+    <result column="securitySituation" property="securitysituation" jdbcType="LONGVARCHAR" />
+    <result column="businessLicence" property="businesslicence" jdbcType="LONGVARCHAR" />
+    <result column="entertainmentLicence" property="entertainmentlicence" jdbcType="LONGVARCHAR" />
+    <result column="fireSafetyCertificate" property="firesafetycertificate" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from entertainment_Record
+    where workNo = #{workno,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.cnaidun.dataservice.dboperation.mysql.model.EntertainmentRecord" >
+    insert into entertainment_Record (workNo, workTypeCode, unitCode, 
+      parentCode, type, status, 
+      uid, chargeName, mobile, 
+      handleOffice, serviceMode, serviceAdress, 
+      doorheadName, unitName, operatingAddress, 
+      unitType, creditCode, corporationName, 
+      corporationMobile, corporationId, operatorName, 
+      operatorMobile, operatorIdno, registrationForm, 
+      securitySituation, businessLicence, 
+      entertainmentLicence, fireSafetyCertificate
+      )
+    values (#{workno,jdbcType=VARCHAR}, #{worktypecode,jdbcType=VARCHAR}, #{unitcode,jdbcType=VARCHAR}, 
+      #{parentcode,jdbcType=VARCHAR}, #{type,jdbcType=INTEGER}, #{status,jdbcType=INTEGER}, 
+      #{uid,jdbcType=VARCHAR}, #{chargename,jdbcType=VARCHAR}, #{mobile,jdbcType=VARCHAR}, 
+      #{handleoffice,jdbcType=VARCHAR}, #{servicemode,jdbcType=VARCHAR}, #{serviceadress,jdbcType=VARCHAR}, 
+      #{doorheadname,jdbcType=VARCHAR}, #{unitname,jdbcType=VARCHAR}, #{operatingaddress,jdbcType=VARCHAR}, 
+      #{unittype,jdbcType=VARCHAR}, #{creditcode,jdbcType=VARCHAR}, #{corporationname,jdbcType=VARCHAR}, 
+      #{corporationmobile,jdbcType=VARCHAR}, #{corporationid,jdbcType=VARCHAR}, #{operatorname,jdbcType=VARCHAR}, 
+      #{operatormobile,jdbcType=VARCHAR}, #{operatoridno,jdbcType=VARCHAR}, #{registrationform,jdbcType=LONGVARCHAR}, 
+      #{securitysituation,jdbcType=LONGVARCHAR}, #{businesslicence,jdbcType=LONGVARCHAR}, 
+      #{entertainmentlicence,jdbcType=LONGVARCHAR}, #{firesafetycertificate,jdbcType=LONGVARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.cnaidun.dataservice.dboperation.mysql.model.EntertainmentRecord" >
+    update entertainment_Record
+    set workTypeCode = #{worktypecode,jdbcType=VARCHAR},
+      unitCode = #{unitcode,jdbcType=VARCHAR},
+      parentCode = #{parentcode,jdbcType=VARCHAR},
+      type = #{type,jdbcType=INTEGER},
+      status = #{status,jdbcType=INTEGER},
+      uid = #{uid,jdbcType=VARCHAR},
+      chargeName = #{chargename,jdbcType=VARCHAR},
+      mobile = #{mobile,jdbcType=VARCHAR},
+      handleOffice = #{handleoffice,jdbcType=VARCHAR},
+      serviceMode = #{servicemode,jdbcType=VARCHAR},
+      serviceAdress = #{serviceadress,jdbcType=VARCHAR},
+      doorheadName = #{doorheadname,jdbcType=VARCHAR},
+      unitName = #{unitname,jdbcType=VARCHAR},
+      operatingAddress = #{operatingaddress,jdbcType=VARCHAR},
+      unitType = #{unittype,jdbcType=VARCHAR},
+      creditCode = #{creditcode,jdbcType=VARCHAR},
+      corporationName = #{corporationname,jdbcType=VARCHAR},
+      corporationMobile = #{corporationmobile,jdbcType=VARCHAR},
+      corporationId = #{corporationid,jdbcType=VARCHAR},
+      operatorName = #{operatorname,jdbcType=VARCHAR},
+      operatorMobile = #{operatormobile,jdbcType=VARCHAR},
+      operatorIdno = #{operatoridno,jdbcType=VARCHAR},
+      registrationForm = #{registrationform,jdbcType=LONGVARCHAR},
+      securitySituation = #{securitysituation,jdbcType=LONGVARCHAR},
+      businessLicence = #{businesslicence,jdbcType=LONGVARCHAR},
+      entertainmentLicence = #{entertainmentlicence,jdbcType=LONGVARCHAR},
+      fireSafetyCertificate = #{firesafetycertificate,jdbcType=LONGVARCHAR}
+    where workNo = #{workno,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select workNo, workTypeCode, unitCode, parentCode, type, status, uid, chargeName, 
+    mobile, handleOffice, serviceMode, serviceAdress, doorheadName, unitName, operatingAddress, 
+    unitType, creditCode, corporationName, corporationMobile, corporationId, operatorName, 
+    operatorMobile, operatorIdno, registrationForm, securitySituation, businessLicence, 
+    entertainmentLicence, fireSafetyCertificate
+    from entertainment_Record
+    where workNo = #{workno,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select workNo, workTypeCode, unitCode, parentCode, type, status, uid, chargeName, 
+    mobile, handleOffice, serviceMode, serviceAdress, doorheadName, unitName, operatingAddress, 
+    unitType, creditCode, corporationName, corporationMobile, corporationId, operatorName, 
+    operatorMobile, operatorIdno, registrationForm, securitySituation, businessLicence, 
+    entertainmentLicence, fireSafetyCertificate
+    from entertainment_Record
+  </select>
+</mapper>

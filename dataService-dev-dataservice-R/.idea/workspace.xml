@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ffb82f2b-36df-4c76-ba07-126b30268557" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/.settings/org.eclipse.wst.common.project.facet.core.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/DataServiceApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/MessageClientListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/client/fileUploads/FileUploadsCient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/BaseController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/Constant$ABLE_STATUS.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/Constant$ActAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/Constant$ActBusType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/Constant$ActFlowDoView.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/Constant$ActResult.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/Constant$ActStauts.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/Constant$ActTaskResult.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/Constant$CodeType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/Constant$DataAuth.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/Constant$ExamineType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/Constant$MenuType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/Constant$NodeType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/Constant$OrganType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/Constant$RESULT.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/Constant$ScheduleStatus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/Constant$YESNO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/Constant$noticeType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/Constant.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/exception/MyException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/exception/MyHandlerExceptionResoler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/exception/RRException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/utils/DateConverUtil$TimeType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/utils/DateConverUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/utils/DateUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/utils/HttpContextUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/utils/IPUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/utils/JsonUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/utils/MD5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/utils/PageUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/utils/PropertiesLoader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/utils/Query.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/utils/Result.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/utils/SpringContextUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/utils/StringUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/utils/Utils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/utils/WebUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/validator/Assert.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/validator/ValidatorUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/xss/HTMLFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/xss/SQLFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/xss/XssFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/common/xss/XssHttpServletRequestWrapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/config/InitMQProperties.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/config/InitRedisCache.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/config/InitWorktypenoConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/controller/Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/BaseInfoCacheServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/PretrialServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/WeChatUserServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/WorkSheetServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/BaseInfoOperation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/PretrialOperation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/WeChatUserOperation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/WeixinSendOperation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/WorkSheetOperation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/dao/AdUnitConverMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/dao/AdUnitMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/dao/BaseInfoMapMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/dao/BaseInfoMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/dao/BaseInfotypeMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/dao/EntertainmentRecordMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/dao/IdInfoMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/dao/RegInfoMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/dao/ScrapMetalMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/dao/UserInfoMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/dao/WeixinSendMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/dao/WorkSheetMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/dao/WorkStatusMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/dao/WorkTypeMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/dao/WorkflowMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/dao/WorkflowTaskMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/model/AdUnit.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/model/AdUnitConver.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/model/BaseInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/model/BaseInfoMap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/model/BaseInfotype.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/model/EntertainmentRecord.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/model/IdInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/model/RegInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/model/ScrapMetal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/model/UserInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/model/WeixinSend.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/model/WorkSheet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/model/WorkStatus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/model/WorkType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/model/Workflow.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/mysql/model/WorkflowTask.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/redis/JedisOperation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/redis/JedisServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/dboperation/redis/config/JedisConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/jsontemplates/DistributionUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/jsontemplates/EntryandexitTemplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/jsontemplates/HouseholdTemplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/jsontemplates/IntersectionTemplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/jsontemplates/PublicsecurityTemplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/service/WORKTYPENO_CACHE00001.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/service/WORKTYPENO_CACHE00002.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/service/WORKTYPENO_ENTRYANDEXIT0001.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/service/WORKTYPENO_HOUSEHOLD0001.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/service/WORKTYPENO_PUBLICSECURITY0003.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/service/WORKTYPENO_PUBLICSECURITY00041.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/service/WORKTYPENO_PUBLICSECURITY00042.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/service/WORKTYPENO_PUBLICSECURITY0005.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/service/WORKTYPENO_PUBLICSECURITY00061.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/service/WORKTYPENO_SMS0001.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/service/WORKTYPENO_SMS0002.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/service/WORKTYPENO_TASK0001.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/service/WORKTYPENO_TASK0002.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/service/WORKTYPENO_TASK0003.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/service/WORKTYPENO_USER0001.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/service/WORKTYPENO_USER0002.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/service/WORKTYPENO_USER0003.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/service/WORKTYPENO_USER0004.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/service/WORKTYPENO_USER0005.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/service/WORKTYPENO_USER0006.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/service/inter/DoMessage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/utils/MessageProperties.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/utils/ReturnMessageUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/utils/SpringBeanUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/dataservice/utils/ZipUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/messageclient/MQServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/messageclient/MessageClientListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/messageclient/config/MessageClientConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/messageclient/config/RabbitMQConnection.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/messageclient/config/RabbitMQConstants.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/messageclient/service/ConsumerHandlerImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/messageclient/service/config/ConsumerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/messageclient/service/config/ConsumerHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/messageclient/service/config/ConsumerSimpleMessageListenerContainer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/messageclient/service/config/ProducerConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/messageclient/service/listener/MessageReceiveListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/messageclient/utils/MessageContextUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/messageclient/utils/MessageParameterStatic.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/bin/com/cnaidun/messageclient/utils/ReturnMessageUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/catalina.base_IS_UNDEFINED/logs/webapp/debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/catalina.base_IS_UNDEFINED/logs/webapp/debug/debug.2018-08-18.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/catalina.base_IS_UNDEFINED/logs/webapp/debug/debug.2018-08-20.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/catalina.base_IS_UNDEFINED/logs/webapp/error.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/catalina.base_IS_UNDEFINED/logs/webapp/error/error.2018-08-18.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/catalina.base_IS_UNDEFINED/logs/webapp/info/info.2018-08-18.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/catalina.base_IS_UNDEFINED/logs/webapp/info/info.2018-08-20.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/data-service-api.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/DataServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/MessageClientListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/client/fileUploads/FileUploadsCient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/common/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/common/Constant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/common/exception/MyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/common/exception/MyHandlerExceptionResoler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/common/exception/RRException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/common/utils/DateConverUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/common/utils/DateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/common/utils/HttpContextUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/common/utils/IPUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/common/utils/JsonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/common/utils/MD5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/common/utils/PageUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/common/utils/PropertiesLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/common/utils/Query.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/common/utils/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/common/utils/SpringContextUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/common/utils/StringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/common/utils/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/common/utils/WebUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/common/validator/Assert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/common/validator/ValidatorUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/common/xss/HTMLFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/common/xss/SQLFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/common/xss/XssFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/common/xss/XssHttpServletRequestWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/config/InitMQProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/config/InitRedisCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/config/InitWorktypenoConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/controller/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/BaseInfoCacheServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/PretrialServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/WeChatUserServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/WorkSheetServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/BaseInfoOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/PretrialOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/WeChatUserOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/WeixinSendOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/WorkSheetOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/dao/AdUnitConverMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/dao/AdUnitMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/dao/BaseInfoMapMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/dao/BaseInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/dao/BaseInfotypeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/dao/EntertainmentRecordMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/dao/IdInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/dao/RegInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/dao/ScrapMetalMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/dao/UserInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/dao/WeixinSendMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/dao/WorkSheetMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/dao/WorkStatusMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/dao/WorkTypeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/dao/WorkflowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/dao/WorkflowTaskMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/model/AdUnit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/model/AdUnitConver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/model/BaseInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/model/BaseInfoMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/model/BaseInfotype.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/model/EntertainmentRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/model/IdInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/model/RegInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/model/ScrapMetal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/model/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/model/WeixinSend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/model/WorkSheet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/model/WorkStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/model/WorkType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/model/Workflow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/mysql/model/WorkflowTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/redis/JedisOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/redis/JedisServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/dboperation/redis/config/JedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/jsontemplates/DistributionUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/jsontemplates/EntryandexitTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/jsontemplates/HouseholdTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/jsontemplates/IntersectionTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/jsontemplates/PublicsecurityTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/service/WORKTYPENO_CACHE00001.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/service/WORKTYPENO_CACHE00002.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/service/WORKTYPENO_ENTRYANDEXIT0001.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/service/WORKTYPENO_HOUSEHOLD0001.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/service/WORKTYPENO_PUBLICSECURITY0003.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/service/WORKTYPENO_PUBLICSECURITY00041.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/service/WORKTYPENO_PUBLICSECURITY00042.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/service/WORKTYPENO_PUBLICSECURITY0005.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/service/WORKTYPENO_PUBLICSECURITY00061.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/service/WORKTYPENO_SMS0001.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/service/WORKTYPENO_SMS0002.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/service/WORKTYPENO_TASK0001.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/service/WORKTYPENO_TASK0002.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/service/WORKTYPENO_TASK0003.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/service/WORKTYPENO_USER0001.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/service/WORKTYPENO_USER0002.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/service/WORKTYPENO_USER0003.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/service/WORKTYPENO_USER0004.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/service/WORKTYPENO_USER0005.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/service/WORKTYPENO_USER0006.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/service/inter/DoMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/utils/MessageProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/utils/ReturnMessageUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/utils/SpringBeanUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/dataservice/utils/ZipUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/messageclient/MQServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/messageclient/MessageClientListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/messageclient/config/MessageClientConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/messageclient/config/RabbitMQConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/messageclient/config/RabbitMQConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/messageclient/service/ConsumerHandlerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/messageclient/service/config/ConsumerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/messageclient/service/config/ConsumerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/messageclient/service/config/ConsumerSimpleMessageListenerContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/messageclient/service/config/ProducerConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/messageclient/service/listener/MessageReceiveListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/messageclient/utils/MessageContextUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/messageclient/utils/MessageParameterStatic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/java/com/cnaidun/messageclient/utils/ReturnMessageUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/resources/application-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/resources/application-prod.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/resources/application-test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/resources/config/cnaidun-worktypeno.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/resources/config/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/resources/config/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/resources/mapper/AdUnitConverMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/resources/mapper/AdUnitMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/resources/mapper/BaseInfoMapMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/resources/mapper/BaseInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/resources/mapper/BaseInfotypeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/resources/mapper/EntertainmentRecordMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/resources/mapper/IdInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/resources/mapper/RegInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/resources/mapper/ScrapMetalMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/resources/mapper/UserInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/resources/mapper/WeixinSendMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/resources/mapper/WorkSheetMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/resources/mapper/WorkStatusMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/resources/mapper/WorkTypeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/resources/mapper/WorkflowMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataService-dev-dataservice-R/src/main/resources/mapper/WorkflowTaskMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/PoliceUserApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/bean/Dictionar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/bean/Dictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/bean/Nation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/common/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/common/Constant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/common/control.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/common/exception/MyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/common/exception/MyHandlerExceptionResoler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/common/exception/RRException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/common/redis/JedisOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/common/redis/JedisServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/common/utils/DateConverUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/common/utils/DateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/common/utils/EmptyUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/common/utils/HttpContextUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/common/utils/IPUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/common/utils/JsonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/common/utils/MD5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/common/utils/PageUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/common/utils/PropertiesLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/common/utils/Query.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/common/utils/RedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/common/utils/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/common/utils/SpringContextUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/common/utils/StringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/common/utils/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/common/utils/WebUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/common/validator/Assert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/common/validator/ValidatorUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/common/xss/HTMLFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/common/xss/SQLFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/common/xss/XssFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/common/xss/XssHttpServletRequestWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/config/CorsFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/config/UserLoginInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/java/com/cnaidun/user/api/policeUser/config/WebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/resources/application-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/resources/application-prod.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/resources/config/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../policeUser-master/policeUser-master/src/main/resources/config/mybatis-config.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/dataService-dev-dataservice-R/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="436949262">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="createModuleGroups" value="true" />
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="importAutomatically" value="true" />
+        <option name="lookForNested" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="DataServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="data-service-test" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cnaidun.DataServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ffb82f2b-36df-4c76-ba07-126b30268557" name="Default Changelist" comment="" />
+      <created>1535623293825</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1535623293825</updated>
+      <workItem from="1535623299996" duration="71000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="71000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Capture Tool" />
+      <window_info id="Web" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info active="true" anchor="right" id="Bean Validation" visible="true" weight="0.32980332" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

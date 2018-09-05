@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cnaidun.dataservice.dboperation.mysql.dao.WorkStatusMapper">
+  <resultMap id="BaseResultMap" type="com.cnaidun.dataservice.dboperation.mysql.model.WorkStatus">
+    <result column="workno" jdbcType="VARCHAR" property="workno" />
+    <result column="unitcode" jdbcType="VARCHAR" property="unitcode" />
+    <result column="opusercode" jdbcType="VARCHAR" property="opusercode" />
+    <result column="workflowno" jdbcType="VARCHAR" property="workflowno" />
+    <result column="taskno" jdbcType="VARCHAR" property="taskno" />
+    <result column="status" jdbcType="VARCHAR" property="status" />
+    <result column="rescontent" jdbcType="VARCHAR" property="rescontent" />
+    <result column="optdate" jdbcType="TIMESTAMP" property="optdate" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+  </resultMap>
+  <insert id="insert" parameterType="com.cnaidun.dataservice.dboperation.mysql.model.WorkStatus">
+    insert into work_status (workno, unitcode, opusercode, 
+      workflowno, taskno, status, 
+      rescontent, optdate, remark
+      )
+    values (#{workno,jdbcType=VARCHAR}, #{unitcode,jdbcType=VARCHAR}, #{opusercode,jdbcType=VARCHAR}, 
+      #{workflowno,jdbcType=VARCHAR}, #{taskno,jdbcType=VARCHAR}, #{status,jdbcType=VARCHAR}, 
+      #{rescontent,jdbcType=VARCHAR}, #{optdate,jdbcType=TIMESTAMP}, #{remark,jdbcType=VARCHAR}
+      )
+  </insert>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select workno, unitcode, opusercode, workflowno, taskno, status, rescontent, optdate, 
+    remark
+    from work_status
+  </select>
+  <select id="selectLastByWorknos" resultMap="BaseResultMap">
+    select workno, unitcode, opusercode, workflowno, taskno, status, rescontent, optdate,remark
+    from work_status
+    where workno in
+    <foreach close=")" collection="worknoList" index="index" item="item" open="(" separator=",">
+      #{item}
+    </foreach>
+    group by workno
+    having optdate=max(optdate)
+  </select>
+
+</mapper>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cnaidun.fileUploads.api.fileUploads.mapper.SmsMapper">
+
+    <resultMap type="com.cnaidun.fileUploads.api.fileUploads.bean.SmsBean" id="smsResult">
+        <result property="wid" column="id"/>
+        <result property="idno" column="idno"/>
+        <result property="phone" column="mobile"/>
+        <result property="startday" column="startday"/>
+        <result property="endday" column="endday"/>
+        <result property="sendday" column="sendday"/>
+        <result property="dsend" column="dsend"/>
+    </resultMap>
+
+    <insert id="insertRecord" parameterType="com.cnaidun.fileUploads.api.fileUploads.bean.SmsBean">
+        insert into weixin_send (
+            wid,
+            idno,
+            mobile,
+            startday,
+            endday,
+            wsend,
+            sendday,
+            dsend
+        )values (
+            #{wid},
+            #{idno},
+            #{phone},
+            #{startday},
+            #{endday},
+            #{wsend},
+            #{sendday},
+            #{dsend}
+        )
+    </insert>
+
+
+
+</mapper>

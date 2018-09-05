@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+    <include worktypeno="TASK0001">com.cnaidun.dataservice.service.WORKTYPENO_TASK0001</include>
+    <include worktypeno="TASK0002">com.cnaidun.dataservice.service.WORKTYPENO_TASK0002</include>
+    <include worktypeno="TASK0003">com.cnaidun.dataservice.service.WORKTYPENO_TASK0003</include>
+
+    <include worktypeno="USER0001">com.cnaidun.dataservice.service.WORKTYPENO_USER0001</include>
+    <include worktypeno="USER0002">com.cnaidun.dataservice.service.WORKTYPENO_USER0002</include>
+    <include worktypeno="USER0003">com.cnaidun.dataservice.service.WORKTYPENO_USER0003</include>
+    <include worktypeno="USER0004">com.cnaidun.dataservice.service.WORKTYPENO_USER0004</include>
+    <include worktypeno="USER0005">com.cnaidun.dataservice.service.WORKTYPENO_USER0005</include>
+    <include worktypeno="USER0006">com.cnaidun.dataservice.service.WORKTYPENO_USER0006</include>
+
+    <include worktypeno="ENTRYANDEXIT0001">com.cnaidun.dataservice.service.WORKTYPENO_ENTRYANDEXIT0001</include>
+    <include worktypeno="ENTRYANDEXIT0002">com.cnaidun.dataservice.service.WORKTYPENO_ENTRYANDEXIT0001</include>
+    <include worktypeno="ENTRYANDEXIT0003">com.cnaidun.dataservice.service.WORKTYPENO_ENTRYANDEXIT0001</include>
+    <include worktypeno="ENTRYANDEXIT0004">com.cnaidun.dataservice.service.WORKTYPENO_ENTRYANDEXIT0001</include>
+    <include worktypeno="ENTRYANDEXIT00041">com.cnaidun.dataservice.service.WORKTYPENO_ENTRYANDEXIT00041</include>
+    <include worktypeno="ENTRYANDEXIT0005">com.cnaidun.dataservice.service.WORKTYPENO_ENTRYANDEXIT0001</include>
+    <include worktypeno="ENTRYANDEXIT0006">com.cnaidun.dataservice.service.WORKTYPENO_ENTRYANDEXIT0001</include>
+    <include worktypeno="ENTRYANDEXIT00061">com.cnaidun.dataservice.service.WORKTYPENO_ENTRYANDEXIT00061</include>
+
+    <include worktypeno="PUBLICSECURITY0001">com.cnaidun.dataservice.service.WORKTYPENO_ENTRYANDEXIT0001</include>
+    <include worktypeno="PUBLICSECURITY0002">com.cnaidun.dataservice.service.WORKTYPENO_ENTRYANDEXIT0001</include>
+    <include worktypeno="PUBLICSECURITY0004">com.cnaidun.dataservice.service.WORKTYPENO_ENTRYANDEXIT0001</include>
+    <include worktypeno="PUBLICSECURITY00041">com.cnaidun.dataservice.service.WORKTYPENO_PUBLICSECURITY00041</include>
+    <include worktypeno="PUBLICSECURITY00042">com.cnaidun.dataservice.service.WORKTYPENO_PUBLICSECURITY00042</include>
+    <include worktypeno="PUBLICSECURITY0006">com.cnaidun.dataservice.service.WORKTYPENO_ENTRYANDEXIT0001</include>
+    <include worktypeno="PUBLICSECURITY00061">com.cnaidun.dataservice.service.WORKTYPENO_PUBLICSECURITY00061</include>
+    <include worktypeno="PUBLICSECURITY0009">com.cnaidun.dataservice.service.WORKTYPENO_ENTRYANDEXIT0001</include>
+
+    <include worktypeno="HOUSEHOLD0001">com.cnaidun.dataservice.service.WORKTYPENO_ENTRYANDEXIT0001</include>
+    <include worktypeno="HOUSEHOLD0002">com.cnaidun.dataservice.service.WORKTYPENO_ENTRYANDEXIT0001</include>
+    <include worktypeno="HOUSEHOLD0003">com.cnaidun.dataservice.service.WORKTYPENO_ENTRYANDEXIT0001</include>
+    <include worktypeno="HOUSEHOLD0004">com.cnaidun.dataservice.service.WORKTYPENO_ENTRYANDEXIT0001</include>
+    <include worktypeno="HOUSEHOLD0005">com.cnaidun.dataservice.service.WORKTYPENO_ENTRYANDEXIT0001</include>
+    <include worktypeno="HOUSEHOLD0006">com.cnaidun.dataservice.service.WORKTYPENO_ENTRYANDEXIT0001</include>
+    <include worktypeno="HOUSEHOLD0007">com.cnaidun.dataservice.service.WORKTYPENO_ENTRYANDEXIT0001</include>
+    <include worktypeno="HOUSEHOLD0008">com.cnaidun.dataservice.service.WORKTYPENO_ENTRYANDEXIT0001</include>
+
+    <include worktypeno="INTERSECTION0001">com.cnaidun.dataservice.service.WORKTYPENO_ENTRYANDEXIT0001</include>
+    <include worktypeno="INTERSECTION0003">com.cnaidun.dataservice.service.WORKTYPENO_ENTRYANDEXIT0001</include>
+    <include worktypeno="INTERSECTION0005">com.cnaidun.dataservice.service.WORKTYPENO_ENTRYANDEXIT0001</include>
+    <include worktypeno="INTERSECTION0007">com.cnaidun.dataservice.service.WORKTYPENO_INTERSECTION0007</include>
+
+    <include worktypeno="CACHE00001">com.cnaidun.dataservice.service.WORKTYPENO_CACHE00001</include>
+    <include worktypeno="CACHE00002">com.cnaidun.dataservice.service.WORKTYPENO_CACHE00002</include>
+
+    <include worktypeno="SMS0001">com.cnaidun.dataservice.service.WORKTYPENO_SMS0001</include>
+    <include worktypeno="SMS0002">com.cnaidun.dataservice.service.WORKTYPENO_SMS0002</include>
+</configuration>

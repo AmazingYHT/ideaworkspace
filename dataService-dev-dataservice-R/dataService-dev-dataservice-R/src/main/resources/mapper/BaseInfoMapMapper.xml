@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cnaidun.dataservice.dboperation.mysql.dao.BaseInfoMapMapper" >
+  <resultMap id="BaseResultMap" type="com.cnaidun.dataservice.dboperation.mysql.model.BaseInfoMap" >
+    <result column="infocode" property="infocode" jdbcType="VARCHAR" />
+    <result column="infotype" property="infotype" jdbcType="VARCHAR" />
+    <result column="parentcode" property="parentcode" jdbcType="VARCHAR" />
+    <result column="parenttype" property="parenttype" jdbcType="VARCHAR" />
+    <result column="createtime" property="createtime" jdbcType="TIMESTAMP" />
+    <result column="infoname" property="infoname" jdbcType="VARCHAR" />
+    <result column="parentname" property="parentname" jdbcType="VARCHAR" />
+  </resultMap>
+  <insert id="insert" parameterType="com.cnaidun.dataservice.dboperation.mysql.model.BaseInfoMap" >
+    insert into base_info_map (infocode, infotype, parentcode,
+      parenttype, createtime, infoname
+      )
+    values (#{infocode,jdbcType=VARCHAR}, #{infotype,jdbcType=VARCHAR}, #{parentcode,jdbcType=VARCHAR},
+      #{parenttype,jdbcType=VARCHAR}, #{createtime,jdbcType=TIMESTAMP}, #{infoname,jdbcType=VARCHAR}
+      )
+  </insert>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select infocode, infotype, parentcode, parenttype, createtime, infoname
+    from base_info_map
+  </select>
+  <select id="selectByParamers" resultMap="BaseResultMap" >
+    select t2.*,t1.`name` as parentname from base_info_map as t2
+    left join base_info as t1 on t2.parenttype = t1.infotype and t2.parentcode= t1.`code`
+    where t2.parenttype =#{parenttype,jdbcType=VARCHAR}
+    and t2.parentcode=#{parentcode,jdbcType=VARCHAR}
+    and t2.infotype=#{infotype,jdbcType=VARCHAR}
+  </select>
+  <select id="selectByParamerType" resultMap="BaseResultMap" >
+    select t2.*,t1.`name` as parentname from base_info_map as t2
+    left join base_info as t1 on t2.parenttype = t1.infotype and t2.parentcode= t1.`code`
+    where t2.parenttype =#{parenttype,jdbcType=VARCHAR}
+    and t2.infotype=#{infotype,jdbcType=VARCHAR}
+  </select>
+</mapper>

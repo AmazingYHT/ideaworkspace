@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cnaidun.dataservice.dboperation.mysql.dao.BaseInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.cnaidun.dataservice.dboperation.mysql.model.BaseInfo" >
+    <result column="code" property="code" jdbcType="VARCHAR" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="nickset" property="nickset" jdbcType="VARCHAR" />
+    <result column="infotype" property="infotype" jdbcType="VARCHAR" />
+    <result column="datatype" property="datatype" jdbcType="VARCHAR" />
+    <result column="status" property="status" jdbcType="VARCHAR" />
+    <result column="createtime" property="createtime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <insert id="insert" parameterType="com.cnaidun.dataservice.dboperation.mysql.model.BaseInfo" >
+    insert into base_info (code, name, nickset, 
+      infotype, datatype, status, 
+      createtime)
+    values (#{code,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{nickset,jdbcType=VARCHAR}, 
+      #{infotype,jdbcType=VARCHAR}, #{datatype,jdbcType=VARCHAR}, #{status,jdbcType=VARCHAR}, 
+      #{createtime,jdbcType=TIMESTAMP})
+  </insert>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select code, name, nickset, infotype, datatype, status, createtime
+    from base_info
+  </select>
+  <select id="selectByInfotype" resultMap="BaseResultMap">
+    select code, name, nickset, infotype, datatype, status, createtime
+    from base_info
+    where infotype = #{infotype,jdbcType=VARCHAR}
+    and status =  #{status,jdbcType=VARCHAR}
+  </select>
+  <select id="selectByInfotypeList" resultMap="BaseResultMap">
+    select code, name, nickset, infotype, datatype, status, createtime
+    from base_info
+    where infotype in
+    <foreach collection="infotypeList" index="index" item="item" open="(" separator="," close=")">
+      #{item}
+    </foreach>
+    and status =  #{status,jdbcType=VARCHAR}
+  </select>
+  <select id="selectByCode" resultMap="BaseResultMap">
+    select code, name, nickset, infotype, datatype, status, createtime
+    from base_info
+    where infotype = #{infotype,jdbcType=VARCHAR}
+    and code = #{code,jdbcType=VARCHAR}
+    and status =  #{status,jdbcType=VARCHAR}
+  </select>
+  <select id="findTemplateByWorkTypeCode" parameterType="java.lang.String" resultType="java.lang.String">
+      select nickset from base_info where  infotype='json_template' and datatype=#{0}
+  </select>
+</mapper>

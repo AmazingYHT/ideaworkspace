@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cnaidun.dataservice.dboperation.mysql.dao.BaseInfotypeMapper" >
+  <resultMap id="BaseResultMap" type="com.cnaidun.dataservice.dboperation.mysql.model.BaseInfotype" >
+    <id column="infotype" property="infotype" jdbcType="VARCHAR" />
+    <result column="infoname" property="infoname" jdbcType="VARCHAR" />
+    <result column="description" property="description" jdbcType="VARCHAR" />
+    <result column="status" property="status" jdbcType="VARCHAR" />
+    <result column="createtime" property="createtime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from base_infotype
+    where infotype = #{infotype,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.cnaidun.dataservice.dboperation.mysql.model.BaseInfotype" >
+    insert into base_infotype (infotype, infoname, description, 
+      status, createtime)
+    values (#{infotype,jdbcType=VARCHAR}, #{infoname,jdbcType=VARCHAR}, #{description,jdbcType=VARCHAR}, 
+      #{status,jdbcType=VARCHAR}, #{createtime,jdbcType=TIMESTAMP})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.cnaidun.dataservice.dboperation.mysql.model.BaseInfotype" >
+    update base_infotype
+    set infoname = #{infoname,jdbcType=VARCHAR},
+      description = #{description,jdbcType=VARCHAR},
+      status = #{status,jdbcType=VARCHAR},
+      createtime = #{createtime,jdbcType=TIMESTAMP}
+    where infotype = #{infotype,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select infotype, infoname, description, status, createtime
+    from base_infotype
+    where infotype = #{infotype,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select infotype, infoname, description, status, createtime
+    from base_infotype
+  </select>
+</mapper>

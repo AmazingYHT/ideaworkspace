@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cnaidun.dataservice.dboperation.mysql.dao.WeixinSendMapper" >
+  <resultMap id="BaseResultMap" type="com.cnaidun.dataservice.dboperation.mysql.model.WeixinSend" >
+    <id column="wid" property="wid" jdbcType="VARCHAR" />
+    <result column="idno" property="idno" jdbcType="VARCHAR" />
+    <result column="mobile" property="mobile" jdbcType="VARCHAR" />
+    <result column="startday" property="startday" jdbcType="DATE" />
+    <result column="endday" property="endday" jdbcType="DATE" />
+    <result column="wsend" property="wsend" jdbcType="INTEGER" />
+    <result column="dsend" property="dsend" jdbcType="INTEGER" />
+    <result column="createtime" property="createtime" jdbcType="DATE" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from weixin_send
+    where wid = #{wid,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.cnaidun.dataservice.dboperation.mysql.model.WeixinSend" >
+    insert into weixin_send (wid, idno, mobile, 
+      startday, endday, wsend, 
+      dsend, createtime)
+    values (#{wid,jdbcType=VARCHAR}, #{idno,jdbcType=VARCHAR}, #{mobile,jdbcType=VARCHAR}, 
+      #{startday,jdbcType=DATE}, #{endday,jdbcType=DATE}, #{wsend,jdbcType=INTEGER}, 
+      #{dsend,jdbcType=INTEGER}, #{createtime,jdbcType=DATE})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.cnaidun.dataservice.dboperation.mysql.model.WeixinSend" >
+    update weixin_send
+    set idno = #{idno,jdbcType=VARCHAR},
+      mobile = #{mobile,jdbcType=VARCHAR},
+      startday = #{startday,jdbcType=DATE},
+      endday = #{endday,jdbcType=DATE},
+      wsend = #{wsend,jdbcType=INTEGER},
+      dsend = #{dsend,jdbcType=INTEGER},
+      createtime = #{createtime,jdbcType=DATE}
+    where wid = #{wid,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select wid, idno, mobile, startday, endday, wsend, dsend, createtime
+    from weixin_send
+    where wid = #{wid,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select wid, idno, mobile, startday, endday, wsend, dsend, createtime
+    from weixin_send
+  </select>
+  <select id="selectByParamer" resultMap="BaseResultMap" >
+    select wid, idno, mobile, startday, endday, wsend, dsend, createtime
+    from weixin_send
+    where to_days(createtime) = to_days(now())
+    <if test="paramer ==  'wsend'">
+      and wsend=#{paraValue,jdbcType=VARCHAR}
+    </if>
+    <if test="paramer ==  'dsend'">
+      and  dsend=#{paraValue,jdbcType=VARCHAR}
+    </if>
+  </select>
+  <update id="updateParamerByPrimaryKey" parameterType="java.lang.String" >
+    update weixin_send
+    <if test="paramer ==  'wsend'">
+      set wsend=#{paraValue,jdbcType=VARCHAR}
+    </if>
+    <if test="paramer ==  'dsend'">
+      set  dsend=#{paraValue,jdbcType=VARCHAR}
+    </if>
+    where wid = #{wid,jdbcType=VARCHAR}
+  </update>
+</mapper>

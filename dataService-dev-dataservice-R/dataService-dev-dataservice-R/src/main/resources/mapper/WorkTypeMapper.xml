@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cnaidun.dataservice.dboperation.mysql.dao.WorkTypeMapper" >
+  <resultMap id="BaseResultMap" type="com.cnaidun.dataservice.dboperation.mysql.model.WorkType" >
+    <id column="worktypecode" property="worktypecode" jdbcType="VARCHAR" />
+    <result column="worklevel" property="worklevel" jdbcType="VARCHAR" />
+    <result column="workname" property="workname" jdbcType="VARCHAR" />
+    <result column="parent" property="parent" jdbcType="VARCHAR" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from work_type
+    where worktypecode = #{worktypecode,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.cnaidun.dataservice.dboperation.mysql.model.WorkType" >
+    insert into work_type (worktypecode, worklevel, workname, 
+      parent)
+    values (#{worktypecode,jdbcType=VARCHAR}, #{worklevel,jdbcType=VARCHAR}, #{workname,jdbcType=VARCHAR}, 
+      #{parent,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.cnaidun.dataservice.dboperation.mysql.model.WorkType" >
+    update work_type
+    set worklevel = #{worklevel,jdbcType=VARCHAR},
+      workname = #{workname,jdbcType=VARCHAR},
+      parent = #{parent,jdbcType=VARCHAR}
+    where worktypecode = #{worktypecode,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select worktypecode, worklevel, workname, parent
+    from work_type
+    where worktypecode = #{worktypecode,jdbcType=VARCHAR}
+  </select>
+  <select id="selectByWorktypecodes" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select worktypecode, worklevel, workname, parent
+    from work_type
+    where worktypecode in
+    <foreach collection="worktypecodeList" index="index" item="item" open="(" separator="," close=")">
+      #{item}
+    </foreach>
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select worktypecode, worklevel, workname, parent
+    from work_type
+  </select>
+</mapper>

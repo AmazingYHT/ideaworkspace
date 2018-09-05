@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cnaidun.dataservice.dboperation.mysql.dao.IdInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.cnaidun.dataservice.dboperation.mysql.model.IdInfo" >
+    <id column="uid" property="uid" jdbcType="VARCHAR" />
+    <id column="idno" property="idno" jdbcType="VARCHAR" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="birthday" property="birthday" jdbcType="DATE" />
+    <result column="sex" property="sex" jdbcType="VARCHAR" />
+    <result column="nation" property="nation" jdbcType="VARCHAR" />
+    <result column="citycode" property="citycode" jdbcType="VARCHAR" />
+    <result column="address" property="address" jdbcType="VARCHAR" />
+    <result column="createtime" property="createtime" jdbcType="TIMESTAMP" />
+    <result column="validdate" property="validdate" jdbcType="VARCHAR" />
+    <result column="authority" property="authority" jdbcType="VARCHAR" />
+    <result column="phone" property="phone" jdbcType="VARCHAR" />
+    <result column="idpositive" property="idpositive" jdbcType="VARCHAR" />
+    <result column="idopposite" property="idopposite" jdbcType="VARCHAR" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="map" >
+    delete from id_info
+    where uid = #{uid,jdbcType=VARCHAR}
+      and idno = #{idno,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.cnaidun.dataservice.dboperation.mysql.model.IdInfo" >
+    insert into id_info (uid, idno, name, 
+      birthday, sex, nation, 
+      citycode, address, createtime, 
+      validdate, authority, phone, 
+      idpositive, idopposite)
+    values (#{uid,jdbcType=VARCHAR}, #{idno,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, 
+      #{birthday,jdbcType=DATE}, #{sex,jdbcType=VARCHAR}, #{nation,jdbcType=VARCHAR}, 
+      #{citycode,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, #{createtime,jdbcType=TIMESTAMP}, 
+      #{validdate,jdbcType=VARCHAR}, #{authority,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, 
+      #{idpositive,jdbcType=VARCHAR}, #{idopposite,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.cnaidun.dataservice.dboperation.mysql.model.IdInfo" >
+    update id_info
+    set name = #{name,jdbcType=VARCHAR},
+      birthday = #{birthday,jdbcType=DATE},
+      sex = #{sex,jdbcType=VARCHAR},
+      nation = #{nation,jdbcType=VARCHAR},
+      citycode = #{citycode,jdbcType=VARCHAR},
+      address = #{address,jdbcType=VARCHAR},
+      createtime = #{createtime,jdbcType=TIMESTAMP},
+      validdate = #{validdate,jdbcType=VARCHAR},
+      authority = #{authority,jdbcType=VARCHAR},
+      phone = #{phone,jdbcType=VARCHAR},
+      idpositive = #{idpositive,jdbcType=VARCHAR},
+      idopposite = #{idopposite,jdbcType=VARCHAR}
+    where uid = #{uid,jdbcType=VARCHAR}
+      and idno = #{idno,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="map" >
+    select uid, idno, name, birthday, sex, nation, citycode, address, createtime, validdate, 
+    authority, phone, idpositive, idopposite
+    from id_info
+    where uid = #{uid,jdbcType=VARCHAR}
+      and idno = #{idno,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select uid, idno, name, birthday, sex, nation, citycode, address, createtime, validdate, 
+    authority, phone, idpositive, idopposite
+    from id_info
+  </select>
+  <select id="selectByParamer" parameterType="map" resultMap="BaseResultMap">
+    select uid, idno, name, birthday, sex, nation, citycode, address, createtime, validdate,
+    authority, phone, idpositive, idopposite
+    from id_info
+    where 1=1
+    <if test="paramer ==  'uid'">
+      and uid=#{paraValue,jdbcType=VARCHAR}
+    </if>
+    <if test="paramer ==  'idno'">
+      and  idno=#{paraValue,jdbcType=VARCHAR}
+    </if>
+  </select>
+  <delete id="deleteByParamer" parameterType="map" >
+    delete from id_info
+    where 1=1
+    <if test="paramer ==  'uid'">
+      and uid=#{paraValue,jdbcType=VARCHAR}
+    </if>
+    <if test="paramer ==  'idno'">
+      and  idno=#{paraValue,jdbcType=VARCHAR}
+    </if>
+  </delete>
+  <select id="selectByIdnoList" resultMap="BaseResultMap">
+    select uid, idno, name, birthday, sex, nation, citycode, address, createtime, validdate,
+    authority, phone, idpositive, idopposite
+    from id_info
+    where idno in
+    <foreach collection="idnoList" index="index" item="item" open="(" separator="," close=")">
+      #{item}
+    </foreach>
+  </select>
+</mapper>

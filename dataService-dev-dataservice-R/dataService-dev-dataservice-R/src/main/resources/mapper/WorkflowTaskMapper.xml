@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cnaidun.dataservice.dboperation.mysql.dao.WorkflowTaskMapper" >
+  <resultMap id="BaseResultMap" type="com.cnaidun.dataservice.dboperation.mysql.model.WorkflowTask" >
+    <id column="taskno" property="taskno" jdbcType="VARCHAR" />
+    <result column="taskname" property="taskname" jdbcType="VARCHAR" />
+    <result column="workflowno" property="workflowno" jdbcType="VARCHAR" />
+    <result column="tasktype" property="tasktype" jdbcType="VARCHAR" />
+    <result column="orderno" property="orderno" jdbcType="VARCHAR" />
+    <result column="content" property="content" jdbcType="VARCHAR" />
+    <result column="status" property="status" jdbcType="VARCHAR" />
+    <result column="createtime" property="createtime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from workflow_task
+    where taskno = #{taskno,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.cnaidun.dataservice.dboperation.mysql.model.WorkflowTask" >
+    insert into workflow_task (taskno, taskname, workflowno, 
+      tasktype, orderno, content, 
+      status, createtime)
+    values (#{taskno,jdbcType=VARCHAR}, #{taskname,jdbcType=VARCHAR}, #{workflowno,jdbcType=VARCHAR}, 
+      #{tasktype,jdbcType=VARCHAR}, #{orderno,jdbcType=VARCHAR}, #{content,jdbcType=VARCHAR}, 
+      #{status,jdbcType=VARCHAR}, #{createtime,jdbcType=TIMESTAMP})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.cnaidun.dataservice.dboperation.mysql.model.WorkflowTask" >
+    update workflow_task
+    set taskname = #{taskname,jdbcType=VARCHAR},
+      workflowno = #{workflowno,jdbcType=VARCHAR},
+      tasktype = #{tasktype,jdbcType=VARCHAR},
+      orderno = #{orderno,jdbcType=VARCHAR},
+      content = #{content,jdbcType=VARCHAR},
+      status = #{status,jdbcType=VARCHAR},
+      createtime = #{createtime,jdbcType=TIMESTAMP}
+    where taskno = #{taskno,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select taskno, taskname, workflowno, tasktype, orderno, content, status, createtime
+    from workflow_task
+    where taskno = #{taskno,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select taskno, taskname, workflowno, tasktype, orderno, content, status, createtime
+    from workflow_task
+  </select>
+</mapper>

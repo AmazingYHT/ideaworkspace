@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cnaidun.dataservice.dboperation.mysql.dao.ScrapMetalMapper" >
+  <resultMap id="BaseResultMap" type="com.cnaidun.dataservice.dboperation.mysql.model.ScrapMetal" >
+    <id column="workNo" property="workno" jdbcType="VARCHAR" />
+    <result column="workTypeCode" property="worktypecode" jdbcType="VARCHAR" />
+    <result column="unitCode" property="unitcode" jdbcType="VARCHAR" />
+    <result column="parentCode" property="parentcode" jdbcType="VARCHAR" />
+    <result column="type" property="type" jdbcType="INTEGER" />
+    <result column="status" property="status" jdbcType="INTEGER" />
+    <result column="uid" property="uid" jdbcType="VARCHAR" />
+    <result column="chargeName" property="chargename" jdbcType="VARCHAR" />
+    <result column="mobile" property="mobile" jdbcType="VARCHAR" />
+    <result column="handleOffice" property="handleoffice" jdbcType="VARCHAR" />
+    <result column="serviceMode" property="servicemode" jdbcType="VARCHAR" />
+    <result column="serviceAdress" property="serviceadress" jdbcType="VARCHAR" />
+    <result column="unitName" property="unitname" jdbcType="VARCHAR" />
+    <result column="creditCode" property="creditcode" jdbcType="VARCHAR" />
+    <result column="corporationName" property="corporationname" jdbcType="VARCHAR" />
+    <result column="corporationMobile" property="corporationmobile" jdbcType="VARCHAR" />
+    <result column="corporationId" property="corporationid" jdbcType="VARCHAR" />
+    <result column="operatorName" property="operatorname" jdbcType="VARCHAR" />
+    <result column="operatorMobile" property="operatormobile" jdbcType="VARCHAR" />
+    <result column="operatorIdno" property="operatoridno" jdbcType="VARCHAR" />
+    <result column="businessLicence" property="businesslicence" jdbcType="LONGVARCHAR" />
+    <result column="corporationIdno" property="corporationidno" jdbcType="LONGVARCHAR" />
+    <result column="scrapMetalRegistrationTable" property="scrapmetalregistrationtable" jdbcType="LONGVARCHAR" />
+    <result column="personnelRegistrationTable" property="personnelregistrationtable" jdbcType="LONGVARCHAR" />
+    <result column="shopFacadePhotos" property="shopfacadephotos" jdbcType="LONGVARCHAR" />
+    <result column="houseLease" property="houselease" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from scrap_metal
+    where workNo = #{workno,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.cnaidun.dataservice.dboperation.mysql.model.ScrapMetal" >
+    insert into scrap_metal (workNo, workTypeCode, unitCode, 
+      parentCode, type, status, 
+      uid, chargeName, mobile, 
+      handleOffice, serviceMode, serviceAdress, 
+      unitName, creditCode, corporationName, 
+      corporationMobile, corporationId, operatorName, 
+      operatorMobile, operatorIdno, businessLicence, 
+      corporationIdno, scrapMetalRegistrationTable, 
+      personnelRegistrationTable, shopFacadePhotos, 
+      houseLease)
+    values (#{workno,jdbcType=VARCHAR}, #{worktypecode,jdbcType=VARCHAR}, #{unitcode,jdbcType=VARCHAR}, 
+      #{parentcode,jdbcType=VARCHAR}, #{type,jdbcType=INTEGER}, #{status,jdbcType=INTEGER}, 
+      #{uid,jdbcType=VARCHAR}, #{chargename,jdbcType=VARCHAR}, #{mobile,jdbcType=VARCHAR}, 
+      #{handleoffice,jdbcType=VARCHAR}, #{servicemode,jdbcType=VARCHAR}, #{serviceadress,jdbcType=VARCHAR}, 
+      #{unitname,jdbcType=VARCHAR}, #{creditcode,jdbcType=VARCHAR}, #{corporationname,jdbcType=VARCHAR}, 
+      #{corporationmobile,jdbcType=VARCHAR}, #{corporationid,jdbcType=VARCHAR}, #{operatorname,jdbcType=VARCHAR}, 
+      #{operatormobile,jdbcType=VARCHAR}, #{operatoridno,jdbcType=VARCHAR}, #{businesslicence,jdbcType=LONGVARCHAR}, 
+      #{corporationidno,jdbcType=LONGVARCHAR}, #{scrapmetalregistrationtable,jdbcType=LONGVARCHAR}, 
+      #{personnelregistrationtable,jdbcType=LONGVARCHAR}, #{shopfacadephotos,jdbcType=LONGVARCHAR}, 
+      #{houselease,jdbcType=LONGVARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.cnaidun.dataservice.dboperation.mysql.model.ScrapMetal" >
+    update scrap_metal
+    set workTypeCode = #{worktypecode,jdbcType=VARCHAR},
+      unitCode = #{unitcode,jdbcType=VARCHAR},
+      parentCode = #{parentcode,jdbcType=VARCHAR},
+      type = #{type,jdbcType=INTEGER},
+      status = #{status,jdbcType=INTEGER},
+      uid = #{uid,jdbcType=VARCHAR},
+      chargeName = #{chargename,jdbcType=VARCHAR},
+      mobile = #{mobile,jdbcType=VARCHAR},
+      handleOffice = #{handleoffice,jdbcType=VARCHAR},
+      serviceMode = #{servicemode,jdbcType=VARCHAR},
+      serviceAdress = #{serviceadress,jdbcType=VARCHAR},
+      unitName = #{unitname,jdbcType=VARCHAR},
+      creditCode = #{creditcode,jdbcType=VARCHAR},
+      corporationName = #{corporationname,jdbcType=VARCHAR},
+      corporationMobile = #{corporationmobile,jdbcType=VARCHAR},
+      corporationId = #{corporationid,jdbcType=VARCHAR},
+      operatorName = #{operatorname,jdbcType=VARCHAR},
+      operatorMobile = #{operatormobile,jdbcType=VARCHAR},
+      operatorIdno = #{operatoridno,jdbcType=VARCHAR},
+      businessLicence = #{businesslicence,jdbcType=LONGVARCHAR},
+      corporationIdno = #{corporationidno,jdbcType=LONGVARCHAR},
+      scrapMetalRegistrationTable = #{scrapmetalregistrationtable,jdbcType=LONGVARCHAR},
+      personnelRegistrationTable = #{personnelregistrationtable,jdbcType=LONGVARCHAR},
+      shopFacadePhotos = #{shopfacadephotos,jdbcType=LONGVARCHAR},
+      houseLease = #{houselease,jdbcType=LONGVARCHAR}
+    where workNo = #{workno,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select workNo, workTypeCode, unitCode, parentCode, type, status, uid, chargeName, 
+    mobile, handleOffice, serviceMode, serviceAdress, unitName, creditCode, corporationName, 
+    corporationMobile, corporationId, operatorName, operatorMobile, operatorIdno, businessLicence, 
+    corporationIdno, scrapMetalRegistrationTable, personnelRegistrationTable, shopFacadePhotos, 
+    houseLease
+    from scrap_metal
+    where workNo = #{workno,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select workNo, workTypeCode, unitCode, parentCode, type, status, uid, chargeName, 
+    mobile, handleOffice, serviceMode, serviceAdress, unitName, creditCode, corporationName, 
+    corporationMobile, corporationId, operatorName, operatorMobile, operatorIdno, businessLicence, 
+    corporationIdno, scrapMetalRegistrationTable, personnelRegistrationTable, shopFacadePhotos, 
+    houseLease
+    from scrap_metal
+  </select>
+</mapper>
